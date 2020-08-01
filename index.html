@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/504d2960cb.js" crossorigin="anonymous"></script>
+    <title>Artist Template</title>
+</head>
+
+<body>
+
+    <header>
+        <article class="container">
+            <div class="logo">
+                <img src="img/Logo.png" alt="logo">
+            </div>
+
+            <nav class="menu">
+                <a href="#">Home</a>
+                <a href="">About</a>
+                <a href="">Gallery</a>
+                <a href="">Contact</a>
+            </nav>
+        </article>
+    </header>
+
+    <section class="heroArea">
+        <div class="container">
+            <article class="portada">
+                <div class="lastSingle">
+                    <div class="text">
+                        <h2>"Sober"</h2>
+                        <h2>Out Now</h2>
+                    </div>
+                    <button class="btnListen">Listen</button>
+                </div>
+            </article>
+
+            <p class="frase">"The only thing you can do to lead a crowd is prove your passion to them"</p>
+        </div>
+
+    </section>
+
+
+    <section class="aboutMe">
+        <div class="container">
+            <h3>About Me</h3>
+
+            <article class="information">
+                <div class="display">
+                    <img src="img/AboutMe.jpg" alt="">
+                    <div class="social">
+                        <div class="circle"><i class="fa fa-facebook"></i> </div>
+                        <div class="circle"> <i class="fa fa-twitter"></i></div>
+                        <div class="circle"><i class="fa fa-instagram"></i></div>
+
+                        <div class="circle"><i class="fa fa-spotify"></i></div>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>Nick van de Wall, better known as Afrojack, is a Dutch DJ, record producer, and remixer from
+                        Spijkenisse. In 2007, he founded the record label Wall Recordings; his debut album Forget the
+                        World was released in 2014. Afrojack regularly features as one of the ten best artists in the
+                        Top 100 DJs published by DJ Mag.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/SilderIMG1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/SilderIMG2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/SilderIMG3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="eventos">
+        <div class="container">
+            <h2>Proximos Eventos</h2>
+            <article class="eventosBox">
+                <div class="box" data-toggle="modal" data-target="#event1-Modal">
+                    <p class="fecha">01 Agosto</p>
+                    <p class="dia">Sabado</p>
+                    <p class="lugar">Barbarella</p>
+                </div>
+                <div class="box" data-toggle="modal" data-target="#event2-Modal">
+                    <p class="fecha">01 Agosto</p>
+                    <p class="dia">Sabado</p>
+                    <p class="lugar">Barbarella</p>
+                </div>
+                <div class="box" data-toggle="modal" data-target="#event3-Modal">
+                    <p class="fecha">01 Agosto</p>
+                    <p class="dia">Sabado</p>
+                    <p class="lugar">Barbarella</p>
+                </div>
+                <div class="box" data-toggle="modal" data-target="#event4-Modal">
+                    <p class="fecha">01 Agosto</p>
+                    <p class="dia">Sabado</p>
+                    <p class="lugar">Barbarella</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="latestHist">
+        <div class="overlay"></div>
+        <div class="container">
+            <h3>Latest Hits</h3>
+            <article class="musicSelection">
+                <div  class="VideoBox" >
+                    <video id="player" src="img/another_life.mp4">
+                        
+                        
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+                <div class="playList">
+                 
+                    <div class="songs">
+                        <div class="title">
+                            <i id="song1" class="fas fa-play-circle"></i>
+                            
+                            <p >Another Life</p>
+                        </div>
+                        <p class="duracion">3:30</p>
+                    </div>
+                    <div class="songs">
+                        <div class="title">
+                            <i id="song2" class="song fa fa-play-circle"></i>
+                            <p >Ten Feet Tall</p>
+                        </div>
+                        <p class="duracion">3:49</p>
+                    </div>
+                    <div class="songs">
+                        <div class="title">
+                            <i id="song3" class="song fa fa-play-circle"></i>
+                            <p>Gone</p>
+                        </div>
+                        <p class="duracion">3:51</p>
+                    </div>
+
+                    <div class="songs">
+                        <div class="title">
+                            <i id="song4" class="song fa fa-play-circle"></i>
+                            <p>No Beef</p>
+                        </div>
+                        <p class="duracion">5:33</p>
+                    </div>
+
+                    <div class="songs">
+                        <div class="title">
+                            <i id="song5" class="song fa fa-play-circle"></i>
+                            <p>It goes like</p>
+                        </div>
+                        <p class="duracion">2:30</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="img/footerBaner.svg" alt="banner">
+            <p>Design by Eidy Trinidad</p>
+        </div>
+    </footer>
+
+    
+   <!--Inicio Modals-->
+  <section>
+    <!--Evento 1-->
+    <section>
+      <!-- Modal -->
+      <div class="modal fade Mymodals" id="event1-Modal" tabindex="-1" role="dialog" 
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+          <div class="modal-content ">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">Barbarella – <span>01 Agosto</span> </h4>
+            </div>
+  
+            <div class="modal-body container ">
+              <div class="row d-flex ">
+                <div class="col-4">
+                  <div>
+                    <img src="img/fotoEvento.png" alt="">
+                  </div>
+                  <div class="texto-modal mt-3">
+                    <p class="modal-date">1 / AGO</p>
+                    <p class="modal-day">SABADO</p>
+                    <p class="modal-year">2020</p>
+                  </div>
+                </div>
+  
+                <div class="col-8">
+                  <h5>BARBARELLA – 01 Agosto</h5>
+                  <div class="texto-modal mt-3">
+                    <p class="ciudad-t">Ciudad</p>
+                    <p class="ciudad-p">Santo Domingo, RD</p><br>
+                    <p class="lugar-t">Lugar</p>
+                    <p class="lugar-p">Estadio Quisqueya</p>
+                  </div>
+                </div>
+  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
+              </div>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!--Fin Evento 1-->
+  
+    <!--Evento 2-->
+    <section>
+      <!-- Modal -->
+      <div class="modal fade Mymodals" id="event2-Modal" tabindex="-1" role="dialog" 
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content ">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Barbarella – <span>01 Agosto</span> </h4>
+              </div>
+    
+              <div class="modal-body container ">
+                <div class="row d-flex ">
+                  <div class="col-4">
+                    <div>
+                      <img src="img/fotoEvento.png" alt="">
+                    </div>
+                    <div class="texto-modal mt-3">
+                      <p class="modal-date">1 / AGO</p>
+                      <p class="modal-day">SABADO</p>
+                      <p class="modal-year">2020</p>
+                    </div>
+                  </div>
+    
+                  <div class="col-8">
+                    <h5>BARBARELLA – 01 Agosto</h5>
+                    <div class="texto-modal mt-3">
+                      <p class="ciudad-t">Ciudad</p>
+                      <p class="ciudad-p">Santo Domingo, RD</p><br>
+                      <p class="lugar-t">Lugar</p>
+                      <p class="lugar-p">Estadio Quisqueya</p>
+                    </div>
+                  </div>
+    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
+                </div>
+    
+              </div>
+    
+            </div>
+          </div>
+      </div>
+    </section>
+  
+    <!--Fin Evento 2-->
+  
+    <!--Evento 3-->
+    <section>
+      <!-- Modal -->
+      <div class="modal fade Mymodals" id="event3-Modal" tabindex="-1" role="dialog" 
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content ">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Barbarella – <span>01 Agosto</span> </h4>
+              </div>
+    
+              <div class="modal-body container ">
+                <div class="row d-flex ">
+                  <div class="col-4">
+                    <div>
+                        <img src="img/fotoEvento.png" alt="">
+                    </div>
+                    <div class="texto-modal mt-3">
+                      <p class="modal-date">1 / AGO</p>
+                      <p class="modal-day">SABADO</p>
+                      <p class="modal-year">2020</p>
+                    </div>
+                  </div>
+    
+                  <div class="col-8">
+                    <h5>BARBARELLA – 01 Agosto</h5>
+                    <div class="texto-modal mt-3">
+                      <p class="ciudad-t">Ciudad</p>
+                      <p class="ciudad-p">Santo Domingo, RD</p><br>
+                      <p class="lugar-t">Lugar</p>
+                      <p class="lugar-p">Estadio Quisqueya</p>
+                    </div>
+                  </div>
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
+                  </div>
+    
+              </div>
+    
+            </div>
+          </div>
+      </div>
+    </section>
+  
+    <!--Fin Evento 3-->
+  
+    <!--Evento 4-->
+    <section>
+      <!-- Modal -->
+      <div class="modal fade Mymodals" id="event4-Modal" tabindex="-1" role="dialog" 
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+          <div class="modal-content ">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">OMNIA – <span>May 10</span> </h4>
+              
+            </div>
+  
+            <div class="modal-body container ">
+              <div class="row d-flex ">
+                <div class="col-4">
+                  <div>
+                    <img src="img/fotoEvento.png" alt="">
+                  </div>
+                  <div class="texto-modal mt-3">
+                    <p class="modal-date">10 / May</p>
+                    <p class="modal-day">FRIDAY</p>
+                    <p class="modal-year">2019</p>
+                  </div>
+                </div>
+  
+                <div class="col-8">
+                  <h5>OMNIA – May 10</h5>
+                  <div class="texto-modal mt-3">
+                    <p class="location-t">Location</p>
+                    <p class="location-p">Las Vegas, NV</p><br>
+                    <p class="venue-t">Venue</p>
+                    <p class="venue-p">Omnia Nightclub</p>
+                  </div>
+                </div>
+  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
+              </div>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    
+  
+    <!--Fin Evento 4-->
+  
+  </section>
+  
+   <!--Fin Modals-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
