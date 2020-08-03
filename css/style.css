@@ -132,7 +132,7 @@ header {
   width: 100%;
   background-color: #000; }
   .eventos .container {
-    height: 310px;
+    padding: 80px 0;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -144,7 +144,8 @@ header {
       width: 645px;
       height: 139px;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      flex-wrap: wrap; }
       .eventos .container .eventosBox .box {
         width: 150px;
         height: 139px;
@@ -201,7 +202,6 @@ header {
     padding-top: 2.6875rem;
     margin-top: 2.25rem;
     width: 100%;
-    height: 535px;
     background: linear-gradient(180deg, rgba(9, 129, 129, 0.075) 0%, rgba(9, 129, 129, 0.116) 100%);
     display: flex;
     justify-content: space-around;
@@ -257,6 +257,53 @@ footer {
       padding-top: 0 0 0 0;
       margin: 1rem 0 0 0;
       color: #666565; }
+
+.contactForm {
+  width: 100%;
+  height: 690px;
+  background-color: #171717; }
+  .contactForm .container {
+    padding-top: 4rem; }
+    .contactForm .container h3 {
+      padding-bottom: 3rem;
+      text-align: center;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 33px;
+      color: #098181; }
+    .contactForm .container .form-group {
+      padding-bottom: 1rem; }
+    .contactForm .container label {
+      font-weight: 600;
+      font-size: 1.125rem;
+      color: #fff; }
+    .contactForm .container form {
+      width: 100%;
+      max-width: 553px;
+      height: 502px;
+      margin: auto; }
+      .contactForm .container form input[type=text] {
+        height: 44px;
+        border-radius: 10px; }
+      .contactForm .container form textarea {
+        height: 125px;
+        border-radius: 10px; }
+      .contactForm .container form .btn-send {
+        background: none;
+        border: 2px solid #fff;
+        font-size: 1.125rem;
+        height: 40px;
+        color: #fff;
+        margin: auto;
+        width: 120px;
+        font-weight: 600;
+        transition: 0.3s ease-in-out;
+        display: block; }
+        .contactForm .container form .btn-send:hover {
+          background-color: #fff;
+          color: #098181;
+          cursor: pointer;
+          border-radius: 10px; }
 
 .Mymodals {
   margin: 0;
@@ -315,6 +362,71 @@ footer {
     background-color: #098181;
     color: #fff; }
 
+@media only screen and (max-width: 800px) {
+  .heroArea .container .portada .lastSingle {
+    width: 350px;
+    top: 510px;
+    left: 200px; }
+    .heroArea .container .portada .lastSingle .text {
+      display: flex; }
+      .heroArea .container .portada .lastSingle .text h2 {
+        font-size: 45px; }
+    .heroArea .container .portada .lastSingle .btnListen {
+      margin: 1rem auto;
+      font-size: 16px;
+      width: 130px;
+      height: 50px; }
+  .heroArea .container .frase {
+    font-size: 20px; }
+
+  .eventos .container {
+    flex-direction: column; }
+    .eventos .container h2 {
+      margin-bottom: 1rem; }
+
+  .latestHist {
+    height: 900px; }
+    .latestHist .container .musicSelection {
+      flex-direction: column; }
+      .latestHist .container .musicSelection .VideoBox {
+        margin: 1rem 0; }
+      .latestHist .container .musicSelection .playList .songs .title i {
+        font-size: 18px; }
+      .latestHist .container .musicSelection .playList .songs .title p {
+        font-size: 16px; }
+      .latestHist .container .musicSelection .playList .songs .duracion {
+        font-weight: 700;
+        font-size: 16px; }
+
+  footer .container {
+    height: 150px; } }
+@media only screen and (max-width: 550px) {
+  .heroArea .container {
+    width: 100%; }
+    .heroArea .container .portada {
+      width: 100%; }
+      .heroArea .container .portada .lastSingle {
+        display: none; }
+    .heroArea .container .frase {
+      font-size: 20px; }
+
+  .aboutMe .container h3 {
+    padding-bottom: 4rem; }
+  .aboutMe .container .information {
+    flex-direction: column;
+    align-items: center; }
+    .aboutMe .container .information .text {
+      width: 430px;
+      text-align: center; }
+
+  .eventos .container h2 {
+    font-size: 35px; }
+  .eventos .container .eventosBox {
+    margin-top: 1rem;
+    width: 100%;
+    height: 309px;
+    display: flex;
+    justify-content: space-around; } }
 * {
   margin: 0;
   padding: 0;
