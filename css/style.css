@@ -245,6 +245,8 @@ header {
 
 footer {
   width: 100%; }
+  footer .mediaQfooter {
+    display: none; }
   footer .container {
     display: flex;
     flex-direction: column;
@@ -398,6 +400,10 @@ footer {
         font-weight: 700;
         font-size: 16px; }
 
+  footer .mediaQfooter {
+    display: block; }
+  footer .footerImg {
+    display: none; }
   footer .container {
     height: 150px; } }
 @media only screen and (max-width: 550px) {
