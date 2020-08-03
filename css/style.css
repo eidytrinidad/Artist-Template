@@ -425,6 +425,12 @@ footer {
       width: 430px;
       text-align: center; }
 
+  .gallery {
+    width: 100%;
+    height: 400px; }
+    .gallery .carousel img {
+      height: 450px; }
+
   .eventos .container h2 {
     font-size: 35px; }
   .eventos .container .eventosBox {
