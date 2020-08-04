@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 header {
   width: 100%;
-  margin-top: 1.9rem;
   background-color: #fff; }
   header .burgerMenu, header .burgerBtn {
     display: none; }
@@ -481,6 +480,22 @@ footer {
     height: 309px;
     display: flex;
     justify-content: space-around; } }
+@media only screen and (max-width: 450px) {
+  .aboutMe {
+    width: 100%;
+    background-color: #171717; }
+    .aboutMe .container .information {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 5rem; }
+      .aboutMe .container .information .text {
+        color: #098181;
+        width: 300px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 30px;
+        margin-top: 3rem; } }
 * {
   margin: 0;
   padding: 0;
