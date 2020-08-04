@@ -13,15 +13,28 @@
 <body>
 
     <header>
+
+      <div class="burgerMenu">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#events">Events</a>
+        <a href="#music">Music</a>
+        <a href="contactForm.html">Contact</a>
+      </div>
+
         <article class="container">
             <div class="logo">
                 <img src="img/Logo.png" alt="logo">
             </div>
+            <button class="burgerBtn"><i id="menuIcon" class="fas fa-bars"></i></button>
 
             <nav class="menu">
                 <a href="#">Home</a>
-                <a href="">About</a>
-                <a href="">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#events">Events</a>
+                <a href="#music">Music</a>
                 <a href="contactForm.html">Contact</a>
             </nav>
         </article>
@@ -45,7 +58,7 @@
     </section>
 
 
-    <section class="aboutMe">
+    <section id="about" class="aboutMe">
         <div class="container">
             <h3>About Me</h3>
 
@@ -70,7 +83,7 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -99,7 +112,7 @@
         </div>
     </section>
 
-    <section class="eventos">
+    <section id="events" class="eventos">
         <div class="container">
             <h2>Proximos Eventos</h2>
             <article class="eventosBox">
@@ -127,17 +140,17 @@
         </div>
     </section>
 
-    <section class="latestHist">
+    <section id="music" class="latestHist">
         <div class="overlay"></div>
         <div class="container">
             <h3>Latest Hits</h3>
             <article class="musicSelection">
                 <div  class="VideoBox" >
-                    <video id="player" src="img/another_life.mp4">
-                        
-                        
+
+                  <img id="posterSong" src="img/another_life.jpg" alt="">
+                    <audio id="player" src="img/another_life.mp3">
                         Your browser does not support the video tag.
-                      </video>
+                      </audio>
                 </div>
                 <div class="playList">
                  

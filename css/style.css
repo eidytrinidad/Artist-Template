@@ -3,11 +3,21 @@ header {
   width: 100%;
   margin-top: 1.9rem;
   background-color: #fff; }
+  header .burgerMenu, header .burgerBtn {
+    display: none; }
   header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 90px; }
+    header .container .burgerBtn {
+      display: none;
+      background: none;
+      border: none; }
+      header .container .burgerBtn:focus {
+        outline: none; }
+      header .container .burgerBtn i {
+        font-size: 1.8rem; }
     header .container .logo img {
       width: 40px; }
     header .container .menu a {
@@ -208,8 +218,10 @@ header {
     align-items: center; }
     .latestHist .container .musicSelection .VideoBox {
       width: 100%;
-      max-width: 400px;
-      height: 310px; }
+      max-width: 300px; }
+      .latestHist .container .musicSelection .VideoBox img {
+        width: 100%;
+        padding-bottom: 1rem; }
       .latestHist .container .musicSelection .VideoBox #player {
         width: 100%; }
     .latestHist .container .musicSelection .playList {
@@ -407,13 +419,43 @@ footer {
   footer .container {
     height: 150px; } }
 @media only screen and (max-width: 550px) {
-  .heroArea .container {
-    width: 100%; }
-    .heroArea .container .portada {
-      width: 100%; }
-      .heroArea .container .portada .lastSingle {
-        display: none; }
-    .heroArea .container .frase {
+  header .menu {
+    display: none; }
+  header .container .burgerBtn {
+    display: block; }
+
+  .heroArea .container .portada {
+    height: 550px;
+    background: url("../img/bgImg2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto; }
+    .heroArea .container .portada .lastSingle {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      width: 200px;
+      height: 150px; }
+      .heroArea .container .portada .lastSingle .text {
+        display: block; }
+        .heroArea .container .portada .lastSingle .text h2 {
+          margin-top: 0rem;
+          text-align: center;
+          font-size: 30px;
+          color: #171717; }
+      .heroArea .container .portada .lastSingle .btnListen {
+        margin: 1rem auto;
+        font-size: 18px;
+        width: 80px;
+        height: 40px;
+        color: #171717;
+        border: 2px solid #171717;
+        transition: 300ms ease-in; }
+        .heroArea .container .portada .lastSingle .btnListen:hover {
+          background-color: rgba(23, 23, 23, 0.7);
+          color: #fff;
+          cursor: pointer;
+          border: none; }
+    .heroArea .container .portada .frase {
       font-size: 20px; }
 
   .aboutMe .container h3 {
@@ -449,5 +491,35 @@ body, html {
   background-color: #000;
   width: 100%;
   height: 100%; }
+
+.burgerMenu {
+  display: none;
+  box-shadow: -8px 7px 19px 0px rgba(10, 10, 10, 0.42);
+  padding-top: 1rem;
+  z-index: 10;
+  position: absolute;
+  background-color: #FFF;
+  width: 250px;
+  height: 300px;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+  .burgerMenu hr {
+    margin: 15px auto;
+    width: 70%;
+    color: #eef3f6; }
+  .burgerMenu a {
+    font-weight: 700;
+    color: #171717;
+    padding-top: 1rem;
+    display: block;
+    text-decoration: none;
+    text-align: center; }
+    .burgerMenu a:hover {
+      text-decoration: none;
+      color: #098181;
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

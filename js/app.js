@@ -4,6 +4,8 @@ const song3 = document.querySelector("#song3");
 const song4 = document.querySelector("#song4");
 const song5 = document.querySelector("#song5");
 
+let posterSong = document.querySelector("#posterSong");
+
 // const canciones = [
 //   {
 //     name: "Another Life",
@@ -55,7 +57,8 @@ const song5 = document.querySelector("#song5");
 var handler1=false;
 
 song1.addEventListener("click",function (){
-    player.src="img/another_life.mp4";
+    player.src="img/another_life.mp3";
+    posterSong.src="img/another_life.jpg"
 
     if (handler1==false) {
     song1.classList.add("fa-pause-circle")
@@ -77,8 +80,8 @@ song1.addEventListener("click",function (){
 })
 
 song2.addEventListener("click",function (){
-    player.src="img/ten_feet_tall.mp4";
-
+    player.src="img/ten_feet_tall.mp3";
+    posterSong.src="img/ten_feet_tall.jpg"
     if (handler1==false) {
 
     song1.classList.add("fa-play-circle")
@@ -100,7 +103,8 @@ song2.addEventListener("click",function (){
 
 song3.addEventListener("click",function (){
 
-    player.src="img/gone.mp4";
+    player.src="img/gone.mp3";
+    posterSong.src="img/gone.jpg"
     if (handler1==false) {
    
     song1.classList.add("fa-play-circle")
@@ -121,7 +125,8 @@ song3.addEventListener("click",function (){
 })
 
 song4.addEventListener("click",function (){
-    player.src="img/nobeef.mp4";
+    player.src="img/nobeef.mp3";
+    posterSong.src="img/nobeef.jpg"
 
     if (handler1==false) {
         song1.classList.add("fa-play-circle")
@@ -142,8 +147,8 @@ song4.addEventListener("click",function (){
 })
 
 song5.addEventListener("click",function (){
-    player.src="img/itgoes.mp4";
-
+    player.src="img/itgoes.mp3";
+    posterSong.src="img/itgoes.jpg"
     if (handler1==false) {
         song1.classList.add("fa-play-circle")
         song2.classList.add("fa-play-circle")
@@ -164,3 +169,22 @@ song5.addEventListener("click",function (){
 
 //console.log(video)
 // https://youtu.be/zDJTI4pT4eE
+
+
+///Burger Menu
+const btn = document.querySelector('.burgerBtn');
+const burgerMenu = document.querySelector(".burgerMenu");
+const menuIcon = document.querySelector("#menuIcon")
+
+btn.addEventListener('click',()=>
+{
+        menuIcon.classList.toggle("fa-times")
+
+        if (menuIcon.className !== "fas fa-bars") {
+            burgerMenu.style.display="block";
+        } else {
+            burgerMenu.style.display="none";
+        }
+   
+    
+})

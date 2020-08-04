@@ -11,21 +11,25 @@
 </head>
 
 <body>
-
     <header>
-        <article class="container">
-            <div class="logo">
-                <img src="img/Logo.png" alt="logo">
-            </div>
 
-            <nav class="menu">
-                <a href="#">Home</a>
-                <a href="">About</a>
-                <a href="">Gallery</a>
-                <a href="contactForm.html">Contact</a>
-            </nav>
-        </article>
-    </header>
+        <div class="burgerMenu">
+          <a href="index.html">Home</a>
+          
+          <a href="contactForm.html">Contact</a>
+        </div>
+        
+          <article class="container">
+              <div class="logo">
+                  <img src="img/Logo.png" alt="logo">
+              </div>
+              <button class="burgerBtn"><i id="menuIcon" class="fas fa-bars"></i></button>
+  
+              <nav class="menu">
+                <a href="index.html">Home</a>
+              </nav>
+          </article>
+      </header>
 
     <section class="contactForm">
         <div class="container">
@@ -58,14 +62,15 @@
     </section>
     <footer>
         <div class="container">
-            <img src="img/footerBaner.svg" alt="banner">
+            <img class="footerImg" src="img/footerBaner2.svg" alt="banner">
+            <img class="mediaQfooter" src="img/footerBaner3.svg" alt="banner">
             <p>Design by Eidy Trinidad</p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
- 
+    <script src="js/contactForm.js"></script>
 </body>
 
 </html>
