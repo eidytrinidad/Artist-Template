@@ -328,48 +328,52 @@ footer {
     border-radius: 0.33rem; }
     .Mymodals .modal-header span {
       font-weight: 700; }
+  .Mymodals .image {
+    margin: auto;
+    padding-bottom: 1.2rem; }
   .Mymodals h5 {
+    padding: 1rem 0;
     font-weight: 700;
-    color: #098181; }
+    color: #098181;
+    text-align: center; }
   .Mymodals .modal-dialog {
     max-width: 650px; }
-  .Mymodals .col-4 {
-    text-align: center;
+  .Mymodals .col-12 {
     margin: 0;
     padding: 0; }
-    .Mymodals .col-4 img {
+    .Mymodals .col-12 img {
       width: 100%;
       max-width: 181px;
       height: 243px; }
-    .Mymodals .col-4 .modal-date,
-    .Mymodals .col-4 .modal-year {
+    .Mymodals .col-12 .modal-date,
+    .Mymodals .col-12 .modal-year {
       font-size: 30px;
       font-weight: 700; }
-    .Mymodals .col-4 .modal-day {
+    .Mymodals .col-12 .modal-day {
       font-size: 19px;
       font-weight: 300;
       background-color: #e2dfdf;
       display: inline-block;
       padding: 0.3125rem 2.5rem; }
-  .Mymodals .col-8 {
+  .Mymodals .col-12 {
     margin: 0;
     padding: 0; }
-    .Mymodals .col-8 p {
+    .Mymodals .col-12 p {
       display: inline-block;
       background-color: #f1f0f0;
       font-weight: 400;
       font-size: 13px; }
-    .Mymodals .col-8 .ciudad-t,
-    .Mymodals .col-8 .lugar-t {
+    .Mymodals .col-12 .ciudad-t,
+    .Mymodals .col-12 .lugar-t {
       padding: 3px 25px; }
-    .Mymodals .col-8 .ciudad-p,
-    .Mymodals .col-8 .lugar-p {
+    .Mymodals .col-12 .ciudad-p,
+    .Mymodals .col-12 .lugar-p {
       padding: 3px 50px 3px 3px; }
-    .Mymodals .col-8 .ciudad-p {
+    .Mymodals .col-12 .ciudad-p {
       padding-right: 11.4375rem; }
-    .Mymodals .col-8 .lugar-p {
+    .Mymodals .col-12 .lugar-p {
       padding-right: 12rem; }
-    .Mymodals .col-8 .lugar-t {
+    .Mymodals .col-12 .lugar-t {
       padding-right: 2rem; }
   .Mymodals .modal-footer .btn-modal {
     background-color: #098181;
@@ -495,7 +499,68 @@ footer {
         font-weight: 600;
         font-size: 1rem;
         line-height: 30px;
-        margin-top: 3rem; } }
+        margin-top: 3rem; }
+
+  .Mymodals {
+    margin: 0;
+    padding: 0;
+    border-radius: 0.33rem; }
+    .Mymodals .modal-header {
+      background: #000;
+      color: #fff;
+      border-radius: 0.33rem; }
+      .Mymodals .modal-header span {
+        font-weight: 700; }
+    .Mymodals .image {
+      margin: auto;
+      padding-bottom: 1.2rem; }
+    .Mymodals h5 {
+      padding: 1rem 0;
+      font-weight: 700;
+      color: #098181;
+      text-align: center; }
+    .Mymodals .modal-dialog {
+      max-width: 650px; }
+    .Mymodals .col-12 {
+      margin: 0;
+      padding: 0; }
+      .Mymodals .col-12 img {
+        width: 100%;
+        max-width: 181px;
+        height: 243px; }
+      .Mymodals .col-12 .modal-date,
+      .Mymodals .col-12 .modal-year {
+        font-size: 20px;
+        font-weight: 700; }
+      .Mymodals .col-12 .modal-day {
+        font-size: 19px;
+        font-weight: 300;
+        background-color: #e2dfdf;
+        display: inline-block;
+        padding: 5px 20px; }
+    .Mymodals .col-12 {
+      margin: 0;
+      padding: 0; }
+      .Mymodals .col-12 p {
+        display: inline-block;
+        background-color: #f1f0f0;
+        font-weight: 400;
+        font-size: 13px; }
+      .Mymodals .col-12 .ciudad-t,
+      .Mymodals .col-12 .lugar-t {
+        padding: 3px 25px; }
+      .Mymodals .col-12 .ciudad-p,
+      .Mymodals .col-12 .lugar-p {
+        padding: 3px 20px 3px 3px; }
+      .Mymodals .col-12 .ciudad-p {
+        padding-right: rem; }
+      .Mymodals .col-12 .lugar-p {
+        padding-right: rem; }
+      .Mymodals .col-12 .lugar-t {
+        padding-right: 2rem; }
+    .Mymodals .modal-footer .btn-modal {
+      background-color: #098181;
+      color: #fff; } }
 * {
   margin: 0;
   padding: 0;
